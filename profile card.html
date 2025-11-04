@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            background: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 36%;
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            background-color: #4070f4;
+        }
+
+        .image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #4070f4;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+
+        .image .profile-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        .profile-card .text-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        .text-data .name {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .text-data .job {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .profile-card .media-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .media-buttons .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            margin: 0 8px;
+            background-color: #4070f4;
+            text-decoration: none;
+        }
+
+        .profile-card .buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .buttons .button {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            border: none;
+            border-radius: 24px;
+            margin: 0 10px;
+            padding: 8px 24px;
+            background-color: #4070f4;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .buttons .button:hover {
+            background-color: #0e4bf1;
+        }
+
+        .profile-card .analytics {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .analytics .data {
+            display: flex;
+            align-items: center;
+            color: #333;
+            padding: 0 20px;
+            border-right: 2px solid #e7e7e7;
+        }
+
+        .data i {
+            font-size: 18px;
+            margin-right: 6px;
+        }
+
+        .data:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="assets/profile.png" alt="" class="profile-img">
+        </div>
+        <div class="text-data">
+            <span class="name">CATHERIN RAICHAL I</span>
+            <span class="job">Web Developer</span>
+        </div>
+        <div class="media-buttons">
+            <a href="#" style="background: #4267b2;" class="link">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" style="background: rgb(218, 8, 85);" class="link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" style="background: black;" class="link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" style="background: rgb(70, 70, 226);" class="link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+        </div>
+        <div class="analytics">
+            <div class="data">
+                <i class="fa fa-heart"></i>
+                <span class="number">1k</span>
+            </div>
+            <div class="data">
+                <i class="fa fa-envelope"></i>
+                <span class="number">2k</span>
+            </div>
+            <div class="data">
+                <i class="fa fa-share"></i>
+                <span class="number">3k</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
