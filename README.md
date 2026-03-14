@@ -12,7 +12,7 @@ A simple **Profile Card UI** built using HTML and CSS.
 
 ## 📸 Preview
 
-![Profile Card](assets/profile-card.png)
+![Profile Card](assets/profile.png)
 
 ## 🛠 Tech Stack
 
